@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
       text-align: center;
       margin: 0;
-      background: url('https://www.tapeciarnia.pl/tapety/normalne/132093_krolik_rozowe_tlo.jpg') no-repeat center center fixed;
+      background: url('https://www.tapeciarnia.pl/tapety/normalne/232196_wielkanoc_jajka_pisanki_kwiaty.jpg') no-repeat center center fixed;
       background-size: 100% 100%;
       color: white;
       position: relative;
@@ -861,8 +861,7 @@
       right: -20px;
       animation-delay: 0.1s;
     }
-
-  </style>
+    </style>
 </head>
 <body>
   <h1>Kalendarz Wielkanocny</h1>
@@ -1027,36 +1026,36 @@
   function renderCalendar() {
     calendar.innerHTML = '';
     const messages = [
-      `<p>Wesołych Świąt kurczaczku! 🐤</p>`,//1
+      `<p>Wesołych Świąt🐤</p>`,//1
       `<img src="https://www.tapeciarnia.pl/tapety/normalne/231822_wielkanoc_kroliczki_kolorowe_pisanki_wiosna.jpg" alt="Easter Image">`,//2
-      `<p>Kocham Cię szalenie mocno! 🌸</p>`,//3
-      `<p>Jesteś miłością mego życia! <br>🐰</p>`,//4
+      `<p>Jesteś super! 🌸</p>`,//3
+      `<p>Nie zmieniaj się! <br>🐰</p>`,//4
       `<img src="https://phoneky.co.uk/thumbs/wallpapers/p2ls/seasonal/49/d14860fb12844750.jpg" alt="Zajączek">`,//5
-      `<p>Mam nadzieję, że kolejne święta spędzimy razem! ❤️</p>`,//6
+      `<p>Trzymam kciuki za studia! 🐤</p>`,//6
       `<img src="https://weareawesomeness.wordpress.com/wp-content/uploads/2012/04/naruhina_easter_by_mattwilson83.jpg" alt="Zajączek">`,//7
       `<img src="https://sakura.org.pl/wp-content/uploads/2023/03/Choshuhizakura-www.jpg" alt="Zajączek">`,//8
-      `<p>Mam <br> nadzieję, że jesteś ze mną szczęśliwa! 🐥</p>`,//9
-      `<p>Bez Ciebie nie ma mnie! 🐔</p>`,//10
-      `<p>Jesteś moim królićkiem! 🐇</p>`,//11
-      `<p>Buzi buzi myszeczko! 👄</p>`,//12
-      `<p>Jaram się Tobą calutką! 🥵</p>`,//13
-      `<p>Jesteś przepiękna! 🩵</p>`,//14
+      `<p>Udanych zabójstw w valorancie! 🐥</p>`,//9
+      `<p>Obyś dobrze wszystko tłumaczyła na angielskim! </p>`,//10
+      `<p>Fajnie mi się z Tobą gada! 🌸</p>`,//11
+      `<p>Masz ładne oczy! 🐤</p>`,//12
+      `<p>Pixelmony! 🐰</p>`,//13
+      `<p>Kup mi w końcu skina w VALO PLIS! </p>`,//14
       `<img src="https://www.tapeciarnia.pl/tapety/na-telefon/tapeta-na-telefon-wielkanocny-kurczaczek.jpg" alt="Zajączek">`,//15
       `<img src="https://img.freepik.com/darmowe-zdjecie/wielkanocne-tapety-z-kroliczkiem-i-duza-pisanka_1340-29449.jpg" alt="Zajączek">`,//16
-      `<p>Tuli tuli promyczku! 😍</p>`,//17
-      `<p>Trzymam kciuki za super ocenki! 🤗`,//18
-      `<p>Jestem z Ciebie przedumny! ☺️`,//19
-      `<p>Chcę być z Tobą na zawsie! 😚`,//20
-      `<p>Nie jestem idealny, ale staram się! <br>🥺</p>`,//21
+      `<p>Udanego Lanego Poniedziałku! 🐥</p>`,//17
+      `<p>Masz fajną mamę! 🌸</p>`,//18
+      `<p>Mam nadzieję, że Ci się podoba kalendarz! 🐰</p>`,//19
+      `<p>Uwielbiam z Tobą grać!🐤</p>`,//20
+      `<p>Jajka poświęcone? XD </p>`,//21
       `<img src="https://png.pngtree.com/png-clipart/20240711/original/pngtree-vector-couple-love-of-cute-bunnies-with-love-heart-animal-valentine-png-image_15534757.png" alt="Zajączek">`,//22
       `<img src="https://i.pinimg.com/236x/d3/ac/7b/d3ac7b2aef52e76c8cd57aa153aab841.jpg" alt="Zajączek">`,//23
       `<img src="https://m.media-amazon.com/images/I/61r3sBXHl1L.jpg" alt="Zajączek">`,//24
       `<img src="https://img.freepik.com/vetores-premium/ilustracao-de-icones-vetoriais-dos-desenhos-animados-de-casal-de-frango-fofo_480044-1156.jpg" alt="Zajączek">`,//25
-      `<p>Jesteś cudowna, wspaniała, idealna! 🥰`,//26
+      `<p>Somersby! Dobrze, że Ty też lubisz! 🐥<p>`,//26
       `<img src="https://png.pngtree.com/png-vector/20250206/ourmid/pngtree-cute-chicken-in-easter-basket-with-eggs-and-flowers-clipart-illustration-png-image_15410755.png" alt="Zajączek">`,//27
-      `<p>Nie wyobrażam sobie życia bez Ciebie! 😽</p>`,//28
-      `<p>Cieszę się, że jesteśmy razem! ❤️‍🔥`,//29
-      `<p>Wesołych Świąt zajączku! 🐰`//30
+      `<p>Uwielbiam z Tobą rozmawiać! 🌸</p>`,//28
+      `<p>Tylko biali! Lepsi są! 🐤<p>`,//29
+      `<p>Wesołych Świąt!🐰<p>`//30
     ];
 
     for (let i = 0; i < 30; i++) {
